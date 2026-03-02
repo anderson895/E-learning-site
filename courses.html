@@ -3,49 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-Learning</title>
-  <!-- Bootstrap 5.3.0 CSS -->
+  <title>E-Learning | Courses</title>
+
+  <!-- Bootstrap 5.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Google Fonts: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    /* Underline links on hover */
-    a.text-decoration-none:hover {
-      text-decoration: underline !important;
-    }
-  </style>
 </head>
-<body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center fw-semibold" href="index.html">
         <span class="material-icons me-2">school</span> E-Learning
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav gap-lg-3">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link d-flex align-items-center" href="index.html">
               <span class="material-icons me-1">home</span> Home
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="courses.html">
-              <span class="material-icons me-1">menu_book</span> Course
+            <a class="nav-link active d-flex align-items-center" href="courses.html">
+              <span class="material-icons me-1">menu_book</span> Courses
             </a>
           </li>
         </ul>
@@ -53,37 +48,96 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container py-5">
-    <h2 class="mb-4 d-flex align-items-center">
-      <span class="material-icons me-2">list</span> Available Courses
-    </h2>
-    <ul class="list-group">
-      <li class="list-group-item d-flex align-items-center">
-        <span class="material-icons me-2">play_circle_filled</span>
-        <a href="lesson1.html" class="text-dark text-decoration-none">Lesson 1: Introduction to HTML</a>
-      </li>
-      <li class="list-group-item d-flex align-items-center">
-        <span class="material-icons me-2">play_circle_filled</span>
-        <a href="lesson2.html" class="text-dark text-decoration-none">Lesson 2: HTML Tags and Structure</a>
-      </li>
-      <li class="list-group-item d-flex align-items-center">
-        <span class="material-icons me-2">play_circle_filled</span>
-        <a href="lesson3.html" class="text-dark text-decoration-none">Lesson 3: Introduction to CSS</a>
-      </li>
-      <li class="list-group-item d-flex align-items-center">
-        <span class="material-icons me-2">play_circle_filled</span>
-        <a href="lesson4.html" class="text-dark text-decoration-none">Lesson 4: HTML forms</a>
-      </li>
-      <li class="list-group-item d-flex align-items-center">
-        <span class="material-icons me-2">play_circle_filled</span>
-        <a href="lesson5.html" class="text-dark text-decoration-none">Lesson 5: CSS - Styling Your Web Page</a>
-      </li>
-     
-    </ul>
-  </div>
+  <!-- ================= MAIN ================= -->
+  <main class="flex-fill">
 
-  <!-- Bootstrap 5.3.0 JS -->
+    <!-- PAGE HEADER -->
+    <section class="py-5 bg-light border-bottom">
+      <div class="container text-center">
+        <h1 class="fw-bold mb-2">Available Courses</h1>
+        <p class="text-muted">
+          Choose a lesson and start building your web development skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- COURSE LIST -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <div class="card shadow-sm border-0">
+              <div class="card-body p-4">
+
+                <ul class="list-group list-group-flush">
+
+                  <li class="list-group-item d-flex align-items-center py-3">
+                    <span class="material-icons text-primary me-3">play_circle</span>
+                    <a href="lesson1.html" class="flex-grow-1 text-decoration-none text-dark fw-medium">
+                      Lesson 1: Introduction to HTML
+                    </a>
+                    <span class="material-icons text-muted">chevron_right</span>
+                  </li>
+
+                  <li class="list-group-item d-flex align-items-center py-3">
+                    <span class="material-icons text-primary me-3">play_circle</span>
+                    <a href="lesson2.html" class="flex-grow-1 text-decoration-none text-dark fw-medium">
+                      Lesson 2: HTML Tags and Structure
+                    </a>
+                    <span class="material-icons text-muted">chevron_right</span>
+                  </li>
+
+                  <li class="list-group-item d-flex align-items-center py-3">
+                    <span class="material-icons text-primary me-3">play_circle</span>
+                    <a href="lesson3.html" class="flex-grow-1 text-decoration-none text-dark fw-medium">
+                      Lesson 3: Introduction to CSS
+                    </a>
+                    <span class="material-icons text-muted">chevron_right</span>
+                  </li>
+
+                  <li class="list-group-item d-flex align-items-center py-3">
+                    <span class="material-icons text-primary me-3">play_circle</span>
+                    <a href="lesson4.html" class="flex-grow-1 text-decoration-none text-dark fw-medium">
+                      Lesson 4: HTML Forms
+                    </a>
+                    <span class="material-icons text-muted">chevron_right</span>
+                  </li>
+
+                  <li class="list-group-item d-flex align-items-center py-3">
+                    <span class="material-icons text-primary me-3">play_circle</span>
+                    <a href="lesson5.html" class="flex-grow-1 text-decoration-none text-dark fw-medium">
+                      Lesson 5: CSS – Styling Your Web Page
+                    </a>
+                    <span class="material-icons text-muted">chevron_right</span>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-light text-center text-muted py-4 mt-auto border-top">
+    <div class="container">
+      <p class="mb-2 fw-semibold">E-Learning Platform</p>
+      <div class="d-flex justify-content-center gap-3 mb-2">
+        <a href="#" class="text-muted text-decoration-none">About</a>
+        <a href="#" class="text-muted text-decoration-none">Privacy</a>
+        <a href="#" class="text-muted text-decoration-none">Contact</a>
+      </div>
+      <small>&copy; 2026 E-Learning. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

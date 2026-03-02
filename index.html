@@ -1,138 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-Learning | Home</title>
-
-  <!-- Bootstrap 5.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Fonts: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Google Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body class="d-flex flex-column min-vh-100">
-
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center fw-semibold" href="#">
-        <span class="material-icons me-2">school</span> E-Learning
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav gap-lg-3">
-          <li class="nav-item">
-            <a class="nav-link active d-flex align-items-center" href="index.html">
-              <span class="material-icons me-1">home</span> Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link d-flex align-items-center" href="courses.html">
-              <span class="material-icons me-1">menu_book</span> Courses
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ================= MAIN ================= -->
-  <main class="flex-fill">
-
-    <!-- HERO SECTION -->
-    <section class="py-5 text-center bg-light">
-      <div class="container py-5">
-        <h1 class="fw-bold mb-3">Welcome to E-Learning</h1>
-        <p class="lead text-muted mb-4">
-          Explore your digital classroom anytime, anywhere.
-        </p>
-        <a href="courses.html" class="btn btn-primary btn-lg d-inline-flex align-items-center">
-          <span class="material-icons me-2">play_arrow</span> View Courses
-        </a>
-      </div>
-    </section>
-
-    <!-- FEATURES SECTION -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row text-center g-4">
-
-          <div class="col-md-4">
-            <div class="p-4 border rounded-3 h-100">
-              <span class="material-icons display-6 text-primary mb-3">laptop</span>
-              <h5 class="fw-semibold">Online Access</h5>
-              <p class="text-muted">
-                Study anywhere using your laptop, tablet, or phone.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="p-4 border rounded-3 h-100">
-              <span class="material-icons display-6 text-primary mb-3">quiz</span>
-              <h5 class="fw-semibold">Interactive Quizzes</h5>
-              <p class="text-muted">
-                Test your knowledge with engaging assessments.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="p-4 border rounded-3 h-100">
-              <span class="material-icons display-6 text-primary mb-3">verified</span>
-              <h5 class="fw-semibold">Certificates</h5>
-              <p class="text-muted">
-                Earn certificates upon course completion.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CALL TO ACTION -->
-    <section class="py-5 bg-dark text-white text-center">
-      <div class="container">
-        <h2 class="fw-bold mb-3">Start Learning Today</h2>
-        <p class="mb-4 text-white-50">
-          Join thousands of students improving their skills.
-        </p>
-        <a href="courses.html" class="btn btn-outline-light btn-lg">
-          Browse Courses
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="bg-light text-center text-muted py-4 mt-auto border-top">
-    <div class="container">
-      <p class="mb-2 fw-semibold">E-Learning Platform</p>
-      <div class="d-flex justify-content-center gap-3 mb-2">
-        <a href="#" class="text-muted text-decoration-none">About</a>
-        <a href="#" class="text-muted text-decoration-none">Privacy</a>
-        <a href="#" class="text-muted text-decoration-none">Contact</a>
-      </div>
-      <small>&copy; 2026 E-Learning. All rights reserved.</small>
-    </div>
-  </footer>
-
-  <!-- Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
